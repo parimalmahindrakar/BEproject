@@ -20,6 +20,7 @@ function returnTrue() {
 function App() {
   const[post, setPost] = useState(null)
 
+
   useEffect(() =>{
     fetch("https://jsonplaceholder.typicode.com/posts/1").then(res => res.json()
       .then(res =>{
@@ -33,7 +34,7 @@ function App() {
 
   return (
     <div className="App"> 
-      {post ? <Categories/>: <LoadingCircle/>}
+      {post ? <Categories />: <LoadingCircle/>}
     </div>
   );
 }
