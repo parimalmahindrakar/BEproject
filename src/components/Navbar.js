@@ -1,8 +1,11 @@
-import React from 'react'
-import logo from '../images/Logo.jpg'
+import React, { useState } from 'react'
+import logo from '../images/Logo.png'
 
 
 export default function Navbar() {
+
+    const[bartext, setBartext] = useState("bars")
+
   return (
     <>
 
@@ -12,11 +15,11 @@ export default function Navbar() {
                 <img src={logo}/>
             </div>
             <div className="navlinks">
-                <h3>Try-Out</h3>
-                <h3>Products</h3>
-                <h3>Explore</h3>
+                <a href="#"><h3>Try-Out</h3></a>
+                <a href="#"><h3>Products</h3></a>
+                <a href="#"><h3>Explore</h3></a>
             </div>
-            <div className="bars ">
+            <div className={bartext} >
                 <div className="line1"></div>
                 <div className="line2"></div>
                 <div className="line3"></div>
@@ -26,12 +29,14 @@ export default function Navbar() {
     <div className="hidenshow__onclick ">
 
         <div className="navlinks__mobview">
-            <button>Try-Out</button>
-            <button>Products</button>
-            <button>Explore</button>
+            <a href="#"><button>Try-Out</button></a>
+            <a href="#"><button>Products</button></a>
+            <a href="#"><button>Explore</button></a>
         </div>
             
     </div>
+
+    
     
     
     </>

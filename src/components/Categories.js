@@ -21,7 +21,7 @@ export default function Categories(props) {
     for(let i = 0; i < 4; i++) {
       content.push(
         <div className="category__bar">
-          <img src={categories[i]} />
+          <a href="#"><img src={categories[i]} /></a>
       </div>
       )
     }
