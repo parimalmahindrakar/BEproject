@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Categories from './components/Categories';
 import LoadingCircle from './components/LoadingCircle';
+import Navbar from './components/Navbar';
 
 
 function sleep(milliseconds) {
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <div className="App"> 
+      <Navbar/>
       {post ? <Categories />: <LoadingCircle/>}
     </div>
   );

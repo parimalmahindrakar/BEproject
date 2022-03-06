@@ -38,7 +38,7 @@ div.loading__screen__main {
 div.categories__bars {
   width: 100%;
   height: 700px;
-  margin-top: 80px;
+  margin-top: 120px;
   overflow-y: scroll;
   /* Track */
   background-color: #555;
@@ -116,3 +116,203 @@ div.categories__bars div.category__bar img {
 
 
 /* ---------------------------------------------------------------- */
+
+
+
+header.header__nav {
+  height: 90px;
+  width: 100%;
+  background-color: #FBE7EE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+header.header__nav nav.navbar__nav {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  header.header__nav nav.navbar__nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  header.header__nav nav.navbar__nav {
+    width: 85%;
+  }
+}
+
+header.header__nav nav.navbar__nav div.logo {
+  width: 200px;
+}
+
+@media (max-width: 992px) {
+  header.header__nav nav.navbar__nav div.logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.header__nav nav.navbar__nav div.logo {
+    width: 100px;
+  }
+}
+
+header.header__nav nav.navbar__nav div.logo img {
+  width: 100%;
+}
+
+header.header__nav nav.navbar__nav div.navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.header__nav nav.navbar__nav div.navlinks h3 {
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 1.6em;
+  color: #d74377;
+  padding: 10px;
+  border: 3px solid #FBE7EE;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 992px) {
+  header.header__nav nav.navbar__nav div.navlinks h3 {
+    font-size: 1em;
+    margin-left: 10px;
+  }
+}
+
+header.header__nav nav.navbar__nav div.navlinks h3:hover {
+  border: 3px solid #d74377;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px #d74377;
+          box-shadow: 0px 0px 10px #d74377;
+}
+
+@media (max-width: 768px) {
+  header.header__nav nav.navbar__nav div.navlinks {
+    display: none;
+  }
+}
+
+header.header__nav nav.navbar__nav .bars {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  header.header__nav nav.navbar__nav .bars {
+    display: none;
+  }
+}
+
+header.header__nav nav.navbar__nav .bars div {
+  width: 32px;
+  height: 3px;
+  background-color: #d74377;
+  margin: 8px 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 100000 !important;
+}
+
+header.header__nav nav.navbar__nav .toggle .line1 {
+  -webkit-transform: rotate(-405deg) translate(-9px, 6px);
+          transform: rotate(-405deg) translate(-9px, 6px);
+}
+
+header.header__nav nav.navbar__nav .toggle .line2 {
+  opacity: 0;
+}
+
+header.header__nav nav.navbar__nav .toggle .line3 {
+  -webkit-transform: rotate(405deg) translate(-9px, -7px);
+          transform: rotate(405deg) translate(-9px, -7px);
+}
+
+div.hidenshow__onclick {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (min-width: 768px) {
+  div.hidenshow__onclick {
+    display: none;
+  }
+}
+
+div.hidenshow__onclick.show__afterclick {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+}
+
+div.hidenshow__onclick div.navlinks__mobview {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+div.hidenshow__onclick div.navlinks__mobview button {
+  padding: 10px;
+  color: #FBE7EE;
+  background: none;
+  font-weight: 900;
+  font-size: 1.7em;
+  text-shadow: 0px 0px 8px #d74377;
+  border: 3px solid #FBE7EE;
+  -webkit-box-shadow: 0px 0px 16px #d74377;
+          box-shadow: 0px 0px 16px #d74377;
+  border-radius: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div.hidenshow__onclick div.navlinks__mobview button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
