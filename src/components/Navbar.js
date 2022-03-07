@@ -4,7 +4,18 @@ import logo from '../images/Logo.png'
 
 export default function Navbar() {
 
-    const[bartext, setBartext] = useState("bars")
+    const[bartext, setBartext] = useState("")
+    const[show__afterclick, setShow__afterclick] = useState("")
+
+    const toggleClass = () => {
+        if(bartext == "toggle" && show__afterclick == "show__afterclick") {
+            setBartext("")
+            setShow__afterclick("")
+        } else {
+            setBartext("toggle")
+            setShow__afterclick("show__afterclick")
+        }
+    }
 
   return (
     <>
@@ -19,19 +30,19 @@ export default function Navbar() {
                 <a href="#"><h3>Products</h3></a>
                 <a href="#"><h3>Explore</h3></a>
             </div>
-            <div className={bartext} >
+            <div className={`bars ${bartext}`} onClick={toggleClass}>
                 <div className="line1"></div>
                 <div className="line2"></div>
                 <div className="line3"></div>
             </div>
         </nav>
     </header>
-    <div className="hidenshow__onclick ">
+    <div className={`hidenshow__onclick ${show__afterclick}`}>
 
         <div className="navlinks__mobview">
-            <a href="#"><button>Try-Out</button></a>
-            <a href="#"><button>Products</button></a>
-            <a href="#"><button>Explore</button></a>
+            <button>Try-Out</button>
+            <button>Products</button>
+            <button>Explore</button>
         </div>
             
     </div>
