@@ -26,7 +26,7 @@ function App() {
     fetch("https://jsonplaceholder.typicode.com/posts/1").then(res => res.json()
       .then(res =>{
         sleep(7000)
-        const {body} = "hell"
+        const {body} = res
         setPost(body)
       })
     )
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App"> 
       <Navbar/>
-      {post ? <Categories />: <Categories/>}
+      {post ? <Categories />: <LoadingCircle/>}
       
     </div>
   );
