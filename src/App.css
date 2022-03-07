@@ -64,7 +64,7 @@ div.categories__bars::-webkit-scrollbar {
 }
 
 div.categories__bars div.category__bar {
-  width: 50%;
+  width: 65%;
   height: 185px;
   margin: auto;
   margin-bottom: 45px;
