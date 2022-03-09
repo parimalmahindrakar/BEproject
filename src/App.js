@@ -3,6 +3,7 @@ import './App.css';
 import Categories from './components/Categories';
 import LoadingCircle from './components/LoadingCircle';
 import Navbar from './components/Navbar';
+import Tryout from './components/Tryout';
 
 
 function sleep(milliseconds) {
@@ -36,8 +37,8 @@ function App() {
   return (
     <div className="App"> 
       <Navbar/>
-      {post ? <Categories />: <LoadingCircle/>}
-      
+      {/*{post ? <Categories />: <LoadingCircle/>}*/}
+      <Tryout/>
     </div>
   );
 }
