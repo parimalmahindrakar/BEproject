@@ -675,7 +675,7 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   background-color: lightgrey;
   padding-top: 10px;
   border-style: outset;
-  min-height: 100%;
+  max-height: 100%;
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
   position: absolute;
@@ -878,14 +878,14 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   color: #FFFFFF;
 }
 
+.cont-2 {
+  height: 155px;
+}
+
 .lips1 {
   position: absolute;
-  width: 148px;
-  height: 148px;
-  left: calc(50% - 148px/2 - 394px);
-  top: 24px;
-
-  border-radius: 24px;
+  width: 70px;
+  height: 120px;
 }
 
 .lips2 {
@@ -1138,10 +1138,20 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   width: 288px;
 }
 
+.slider1 {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 5px;
+  border-radius: 10px;
+  background: rgb(48, 28, 119); /* Grey background */
+  outline: none;  
+  opacity: 1.0;
+}
+
 .slider {
   position: absolute;
   width: 288px;
-  height: 0px;
+  height: 15px;
   left: 263px;
   top: 136px;
   -webkit-transition: .2s;
@@ -1150,13 +1160,13 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   border: 3px solid #000000;
 }
 
-.slider::-webkit-slider-thumb {
+.slider1::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #afaef7;
   cursor: pointer;
 }
 
@@ -1189,11 +1199,10 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
 }
 
 .smallcolor1 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 196px;
-  top: 116px;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
 }
 
 .smallcolor3 {

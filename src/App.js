@@ -36,8 +36,8 @@ function App() {
 
   return (
     <div className="App"> 
-      <Navbar/>
-      {/*{post ? <Categories />: <LoadingCircle/>}*/}
+      {/*<Navbar/>
+      {post ? <Categories />: <LoadingCircle/>}*/}
       <Tryout/>
     </div>
   );
