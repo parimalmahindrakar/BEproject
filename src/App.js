@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Categories from './components/Categories';
 import LoadingCircle from './components/LoadingCircle';
-import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Lips from './components/Lips';
 import Tryout from './components/Tryout';
-import LipProducts from './components/LipProducts';
+import { BrowserRouter as Router, Switch, 
+  Route, Redirect,} from "react-router-dom";
 
 
 function sleep(milliseconds) {
@@ -37,10 +38,18 @@ function App() {
 
   return (
     <div className="App"> 
-      {/*<Navbar/>*/}
-      {/*{post ? <Categories />: <LoadingCircle/>}*/}
+      <Router>
+        <Switch>
+          <Route exact path="/" component={post ? Home: LoadingCircle}/>
+          <Route path="/lipproducts" component={Lips} />
+          <Route path="/tryout" component={Tryout} />
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+      {/* <Navbar/> */}
+      {/* {post ? <Categories />: <LoadingCircle/>} */}
       {/*<Tryout/>*/}
-      {/*<LipProducts/>*/}
+      {/* <LipProducts/> */}
     </div>
   );
 }

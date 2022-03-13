@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../images/Logo.png'
+import { Link } from "react-router-dom";
 
 
 export default function Navbar() {
@@ -26,9 +27,9 @@ export default function Navbar() {
                 <img src={logo}/>
             </div>
             <div className="navlinks">
-                <a href="#"><h3>Try-Out</h3></a>
-                <a href="#"><h3>Products</h3></a>
-                <a href="#"><h3>Explore</h3></a>
+                <Link to="/tryout"><h3>Try-Out</h3></Link>
+                <Link to="/lipproducts"><h3>Products</h3></Link>
+                <Link to="/"><h3>Explore</h3></Link>
             </div>
             <div className={`bars ${bartext}`} onClick={toggleClass}>
                 <div className="line1"></div>
