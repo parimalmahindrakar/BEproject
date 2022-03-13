@@ -15,7 +15,7 @@ export default function LipProducts() {
         <div className="row">
             <div className="col-sm">
                 <div className="row-sm">
-                    <img src={rectangle} className="lipsticks"></img>
+                    <img src={rectangle} className="lipsticks img-fluid"></img>
                     <h1 className="carousel-caption">Find Your Perfect Shade!</h1>
                 </div>
             </div>
@@ -26,7 +26,7 @@ export default function LipProducts() {
     
     <div className="container-fluid ">
         <div className="row mt-5">
-            <div className="col-sm-2 mr-5 ml-3">
+            <div className="col-sm-2 d-flex justify-content-center mb-4 ml-4 mr-4">
                 <a href="#">
                     <div className="pac_product1">
                         <img src={lips1} className="pac_image1"></img>
@@ -35,7 +35,7 @@ export default function LipProducts() {
                 </a>
             </div>
 
-            <div className="col-sm-2 mr-5">
+            <div className="col-sm-2 d-flex justify-content-center mb-4 ml-4 mr-4">
             <a href="#">
                 <div className="pac_product1">
                     <img src={lips2} className="pac_image1"></img>
@@ -44,7 +44,7 @@ export default function LipProducts() {
             </a>
             </div>
 
-            <div className="col-sm-2 mr-5">
+            <div className="col-sm-2 d-flex justify-content-center mb-4 ml-4 mr-4">
             <a href="#">
                 <div className="pac_product1">
                     <img src={lips3} className="pac_image1"></img>
@@ -53,7 +53,7 @@ export default function LipProducts() {
             </a>
             </div>
 
-            <div className="col-sm-2 mr-5">
+            <div className="col-sm-2 d-flex justify-content-center mb-4 ml-4 mr-4">
             <a href="#">
                 <div className="pac_product1">
                     <img src={lips4} className="pac_image1"></img>
@@ -62,7 +62,7 @@ export default function LipProducts() {
             </a>
             </div>
 
-            <div className="col-sm-2 mr-5">
+            <div className="col-sm-2 d-flex justify-content-center mb-4 ml-4 mr-4">
             <a href="#">
                 <div className="pac_product1">
                     <img src={lips5} className="pac_image1"></img>
