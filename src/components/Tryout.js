@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 import arrow from '../images/arrow_back_24px.png'
 import bag from '../images/bag.png'
@@ -71,9 +72,11 @@ export default function Tryout() {
             <br></br>
             <div className="row">
                 <div className="col-sm">
-                    <button className="btn button float-left" type="button">
+                    <Link to="/LipProducts">
+                        <button className="btn button float-left" type="button">
                         All Products <span className="caret"></span>
-                    </button>
+                        </button>
+                    </Link>
                 </div>
                 <div className="col-sm">
                     <button className="btn button float-right" type="button">
