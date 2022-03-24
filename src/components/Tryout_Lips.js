@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
 import $ from 'jquery';
+import ReactDOM from "react-dom";
 
 import arrow from '../images/arrow_back_24px.png'
 import bag from '../images/bag.png'
