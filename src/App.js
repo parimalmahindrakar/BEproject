@@ -8,6 +8,8 @@ import Tryout from './components/Tryout_Lips';
 import Tryout_shirt from './components/Tryout_shirt';
 import { BrowserRouter as Router, Switch, 
   Route, Redirect,} from "react-router-dom";
+import Tryout_necklace from './components/Tryout_necklace';
+import Necklace from './components/Necklace';
 
 
 function sleep(milliseconds) {
@@ -45,8 +47,10 @@ function App() {
           <Route exact path="/" component={post ? Home: LoadingCircle}/>
           <Route path="/lipproducts" component={Lips} />
           <Route path="/tshirt" component={Shirt} />
+          <Route path="/necklace" component={Necklace} />
           <Route path="/tryout" component={Tryout} />
           <Route path="/tryout_shirt" component={Tryout_shirt} />
+          <Route path="/tryout_necklace" component={Tryout_necklace} />
           <Redirect to="/" />
         </Switch>
       </Router>

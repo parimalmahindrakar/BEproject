@@ -30,7 +30,7 @@ export default function Navbar() {
                 <Link to="/tryout"><h3>Try-Out</h3></Link>
                 {/* <Link to="/lipproducts"><h3>Products</h3></Link> */}
                 <Link to="/tshirt"><h3>T-Shirts</h3></Link>
-                <Link to="/"><h3>Necklace</h3></Link>
+                <Link to="/necklace"><h3>Necklace</h3></Link>
             </div>
             <div className={`bars ${bartext}`} onClick={toggleClass}>
                 <div className="line1"></div>
