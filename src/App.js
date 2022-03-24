@@ -3,7 +3,9 @@ import './App.css';
 import LoadingCircle from './components/LoadingCircle';
 import Home from './components/Home';
 import Lips from './components/Lips';
-import Tryout from './components/Tryout';
+import Shirt from './components/Shirt';
+import Tryout from './components/Tryout_Lips';
+import Tryout_shirt from './components/Tryout_shirt';
 import { BrowserRouter as Router, Switch, 
   Route, Redirect,} from "react-router-dom";
 
@@ -42,7 +44,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={post ? Home: LoadingCircle}/>
           <Route path="/lipproducts" component={Lips} />
+          <Route path="/tshirt" component={Shirt} />
           <Route path="/tryout" component={Tryout} />
+          <Route path="/tryout_shirt" component={Tryout_shirt} />
           <Redirect to="/" />
         </Switch>
       </Router>

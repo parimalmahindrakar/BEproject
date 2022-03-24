@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import $ from 'jquery';
 
 import arrow from '../images/arrow_back_24px.png'
 import bag from '../images/bag.png'
@@ -9,8 +10,6 @@ import color1 from '../images/color1.png'
 import dot from '../images/dot.png'
 import lips1 from '../images/pac1.jpg'
 import lips2 from '../images/pac2.jpg'
-
-
 
 export default function Tryout() {
   return (
@@ -29,13 +28,11 @@ export default function Tryout() {
                 <video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay></video>
                 <canvas id="overlay"></canvas>
             </div>
-            <br></br>  
+            {/* <br></br>   */}
                 <div className="row">
                     <div className="col-sm">
                         <div className="row-sm">
-                        <a href="#">
-                            <img src={arrow} className="arrow float-left"></img>
-                        </a>
+                            <Link to='/lipproducts'><img src={arrow} className="arrow float-left"></img></Link>
                         </div>
                     </div>
                     <div className="col-sm">
@@ -52,27 +49,16 @@ export default function Tryout() {
                         </div>
                     </div>
                 </div>
-            <br></br>   
-            <hr></hr>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+                <hr></hr>   
+            <div className='container cont-tryon bg-light rounded'>
+                <div class="ar-window">
+                    <video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay></video>
+                    <canvas id="overlay"></canvas>
+                </div>
+            </div>
             <div className="row">
                 <div className="col-sm">
-                    <Link to="/LipProducts">
+                    <Link to="/">
                         <button className="btn button float-left" type="button">
                         All Products <span className="caret"></span>
                         </button>
@@ -88,21 +74,28 @@ export default function Tryout() {
             <div class="container-fluid cont-2 rounded bg-light p-3 my-3 border">
                 <div className="row row1">
                     <div className="col-sm-1">
-                            <img src={lips1} className="lips1"></img>
+                            <img src={sessionStorage.getItem("lip_img")} className="lips1"></img>
                     </div>
                     <div className="col-sm-11">
-                            <h1 className="float-left">PAC Smudge Me Not Lipstick</h1> 
+                            <h1 className="float-left">{sessionStorage.getItem("lip_desc")}</h1> 
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
                     <div className="col-sm-4 mt-2">
-                        <img src={color1} className="smallcolor1"></img>
-                        <input type="range" min="20" max="100" className="slider1 ml-4" id="myRange" onchange ="updatePigmentation()"></input>
+                        <button className="color1 rounded-circle mr-3" id="color1"></button>
+                        <button className="color2 rounded-circle mr-3" id="color1"></button>
+                        <button className="color3 rounded-circle mr-3" id="color1"></button>
+                        <button className="color4 rounded-circle mr-3" id="color1"></button>
+                        <button className="color5 rounded-circle mr-3" id="color1"></button>
+                        <button className="color6 rounded-circle mr-3" id="color1"></button>
+                        <button className="color7 rounded-circle mr-3" id="color1"></button>
+                        <button className="color8 rounded-circle mr-3" id="color1"></button>
+                        {/* <input type="range" min="20" max="100" className="slider1 ml-4" id="myRange" onchange ="updatePigmentation()"></input> */}
                     </div>
                     <div className="col-sm">
-                        <h1 className="float-right">₹450/-</h1>
+                        <h1 className="float-right">{sessionStorage.getItem("lip_price")}</h1>
                     </div>
                     <div className="col-sm">
                         <button className="btn button float-right" type="button">
@@ -145,7 +138,6 @@ export default function Tryout() {
     </div>*/}
             </div>
         </div>
-        
         
             {/*<a href="#">
                 <button className="btn button" type="button" style="width: 100%">

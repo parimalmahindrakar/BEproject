@@ -657,6 +657,10 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   border-radius: 62px;
 }
 
+.carousel {
+  margin-top: 25px;
+}
+
 .button {
   background-color: rgb(71, 52, 52);
   height: 45px;
@@ -670,12 +674,11 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   background-color: rgb(143, 93, 93);
 }
 
+
 .cont-outline {
         
   background-color: lightgrey;
   padding-top: 10px;
-  border-style: outset;
-  max-height: 100%;
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
   position: absolute;
@@ -686,6 +689,10 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
   
   margin: auto;  
   
+}
+
+.cont-3 {
+  margin-top: 90px;
 }
 
 .addtocart {
@@ -880,6 +887,12 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
 
 .cont-2 {
   height: 155px;
+}
+
+.cont-tryon {
+  height: 404px;
+  width: 504px;
+  margin-top: 25px;
 }
 
 .lips1 {
@@ -1216,82 +1229,66 @@ div.hidenshow__onclick div.navlinks__mobview button:active {
 }
 
 .color1 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 84px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #630015;
 }
 
 .color2 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 231px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #90001F;
 }
 
 .color3 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 330px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #DB0734;
 }
 
 .color4 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 429px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #A30E2D;
 }
 
 .color5 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 528px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #721629;
 }
 
 .color6 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 627px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #6D0505;
 }
 
 .color7 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 726px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #41000E;
 }
 
 .color8 {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 825px;
-  top: 274px;
-  border-radius: 50%;
+  position: sticky;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2px;
   background: #721629;
 }
 
@@ -1558,10 +1555,36 @@ canvas {
   height: 150px;
   border-radius: 24px;
   }
+
+  .tshirt{
+    position: relative;
+    margin-top:90px;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width: 600px;
+    height: 500px;
+    border-radius: 24px;
+    }
+
+  .carousel1{
+    margin-top:60px;
+    }
   
   .carousel-caption{
     top:55%;
   }
+
+  .margin_shirt {
+    margin-top: 36px;
+  }
+
+  .carousel-caption1{
+    top: 0%;
+    text-align: center;
+    color: white;
+  } 
 
   
   .pac_product1{

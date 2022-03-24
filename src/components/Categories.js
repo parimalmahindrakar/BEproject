@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 import lips from '../images/lips.png'
 import essentials from '../images/essentials.png'
@@ -19,11 +19,27 @@ export default function Categories(props) {
     let content =[];
 
     for(let i = 0; i < 4; i++) {
-      content.push(
-        <div className="category__bar">
-          <a href="#"><img src={categories[i]} /></a>
-      </div>
-      )
+      if (i==0) {
+        content.push(
+          <div className="category__bar">
+            <Link to="/lipproducts"><img src={categories[i]} /></Link>
+        </div>
+        )
+      }
+      else if (i==1) {
+        content.push(
+          <div className="category__bar">
+            <Link to="/tshirt"><img src={categories[i]} /></Link>
+        </div>
+        )
+      }
+      else {
+        content.push(
+          <div className="category__bar">
+            <Link to="/tshirt"><img src={categories[i]} /></Link>
+        </div>
+        )
+      }
     }
 
     return content;
